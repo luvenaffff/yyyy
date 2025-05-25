@@ -1,0 +1,213 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Inter", sans-serif;
+}
+
+.header {
+	height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DB877C;
+    padding: 10px 20px;
+}
+.logo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.icons {
+    display: flex;
+    gap: 80px;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.favorite {
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+}
+
+.assortment-title {
+	padding-left: 20px;
+}
+
+/* Стили для секции с букетами */
+.bouquets-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Отступ между букетами */
+  flex-wrap: wrap; /* Перенос на следующую строку, если не помещается */
+  
+  padding: 10px 20px;
+}
+
+.image-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bouquet {
+  flex: 1 1 calc(25% - 20px); /* 4 букета в ряд с учетом отступов */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.bouquet-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Закругленные углы для картинок */
+}
+
+.bouquet-info {
+  margin-top: 15px;
+}
+
+.bouquet-name {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize; /* Первая буква заглавная */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bouquet-price {
+  font-size: 24px;
+  font-weight:bold;
+  color: #000000; /* Цвет для цены */
+}
+
+.bouquet-description {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+.bouquet-info {
+    text-align: left; /* Выравнивание текста по левому краю */
+    margin-top: 10px; /* Отступ сверху для текста */
+}
+
+.bouquet-name {
+    font-size: 24px; /* Размер шрифта для названия */
+    font-weight: bold; /* Жирный шрифт для названия */
+    color: #000; /* Цвет текста, можно изменить */
+}
+
+
+.bouquet-description {
+    font-size: 16px; /* Размер шрифта для описания */
+    color: #555; /* Цвет текста описания, можно изменить */
+    margin-top: 5px; /* Отступ сверху для описания */
+}
+.single-image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Отступы вокруг изображения */
+}
+
+.single-image {
+    height: 320px; /* Высота изображения */
+    width: auto; /* Сохраняет пропорции изображения */
+    border-radius: 10px; /* Закругленные углы для изображения */
+}.gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Отступ между картинками */
+  flex-wrap: wrap; /* Если картинки не помещаются в ряд, они переносятся на следующую строку */
+  padding: 10px 20px;
+}
+
+.gallery-item {
+  flex: 1 1 calc(25% - 20px); /* 4 картинки в ряд с учетом отступов */
+  box-sizing: border-box;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.item-name {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize; /* Первая буква заглавная */
+}
+
+.item-price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.item-description {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}/* Стили для футера */
+.footer {
+
+  width: 100%;
+  margin-top: 50px; /* Расстояние от предыдущей секции */
+}
+
+.footer-rectangle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  height: 132px;
+  background-color: #DB877C; /* Цвет прямоугольника */
+    padding: 10px 20px;
+
+}
+
+.footer-logo {
+  width: 500px;
+  height: 96px;
+
+ 
+}
+
+.footer-icons { 
+ 
+  display: flex;
+  gap: 55px; /* Расстояние между иконками */
+}
+
+.footer-icon {
+  width: 57px;
+  height: 57px;
+}
+
+
+.full-width-image-section {
+  padding: 20px 0; /* Отступы сверху и снизу по 20px */
+  width: 100%;
+  overflow: hidden; /* Обрезаем возможные выходящие за пределы элементы */
+}
+
+.full-width-image {
+
+  display: block; /* Убираем лишнее пространство под изображением */
+  margin: 0 auto; /* Центрируем изображение по горизонтали */
+  object-fit: cover; /* Сохраняем пропорции изображения */
+}
